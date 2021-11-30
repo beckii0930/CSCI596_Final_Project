@@ -2,8 +2,9 @@
 This is a readme file for the final project for the CSCI 596 course.
 ## 0. Background
 
-![AA.png]
-![CG.png]
+
+![image](https://user-images.githubusercontent.com/25398675/143984006-4cf775ca-439b-45e8-a61b-1bfe9137c1a9.png)
+
 ## 1. Introduction
 If the C compiler on your computer is cc (also common is gcc for Gnu C
 compiler), type:
