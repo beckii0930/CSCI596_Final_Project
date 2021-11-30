@@ -4,7 +4,7 @@
 
 ## 0. Background
 
-### Chromatin Remodelers
+### Chromatin Remodeler IN080 (PDB ID: 6fml)
 <p align="center">
   <img src="./ino80.png" width="800">
 </p>
@@ -17,7 +17,8 @@ A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a 
   <img src="./Ccgscheme.png" width="400">
 </p>
 
-A "**1 Sites per Amino Acid**" strategy is used to coarse grain protein.Below is a sample CG scheme for a protein sequence ALA-ASP-ASP-GLU-GLN.
+A "**1 Sites per Amino Acid**" strategy is used to coarse grain protein. Below is a sample CG scheme for a protein
+sequence ALA-ASP-ASP-GLU-GLN.
 <p align="center">
   <img src="./pro_cg_scheme.png" width="400">
 </p>
