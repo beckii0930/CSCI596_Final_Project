@@ -10,7 +10,7 @@
 </p>
 
 ```
-#### The Biological Question: What is the moleclar mechanism INO80 uses to slide the nucleosome using ATP hydrolysis?
+The Biological Question: What is the moleclar mechanism INO80 uses to slide the nucleosome using ATP hydrolysis?
 ```
 ### 2. Coarse Grain Molecular Dynamics
 
