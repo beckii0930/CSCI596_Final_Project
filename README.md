@@ -3,7 +3,9 @@ This is a readme file for the final project for the CSCI 596 course.
 ## 0. Background
 
 
-![image](https://user-images.githubusercontent.com/25398675/143984006-4cf775ca-439b-45e8-a61b-1bfe9137c1a9.png)
+Coarse Graining
+![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
+
 
 ## 1. Introduction
 If the C compiler on your computer is cc (also common is gcc for Gnu C
