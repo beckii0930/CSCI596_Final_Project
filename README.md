@@ -17,7 +17,7 @@ What is the moleclar mechanism INO80 uses to slide the nucleosome using ATP hydr
 
 A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a sample CG scheme for a nucleotide C.
 <p align="center">
-  <img src="./Ccgscheme.png" width="400">
+  <img src="./Ccgscheme.png" width="300">
 </p>
 
 A "**1 Sites per Amino Acid**" strategy is used to coarse grain protein. Below is a sample CG scheme for a protein
