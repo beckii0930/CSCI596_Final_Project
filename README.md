@@ -1,7 +1,8 @@
 # CSCI596 Final Project: 
-# Coarse-Grain MD Simulation for Chromatin Remodeler INO80
-#### Yibei Jiang
 
+# Coarse-Grain MD Simulation for Chromatin Remodeler INO80
+
+#### Yibei Jiang
 _________________
 
 
