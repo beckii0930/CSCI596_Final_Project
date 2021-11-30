@@ -9,6 +9,7 @@
   <img src="./ino80.png" width="800">
 </p>
 
+#### The Biological Question: What is the moleclar mechanism INO80 uses to slide the nucleosome using ATP hydrolysis?
 
 ### Coarse Graining
 
