@@ -1,9 +1,12 @@
-# CSCI596_Final_Project
-This is a readme file for the final project for the CSCI 596 course.
+# CSCI596 Final Project: Coarse-Grain MD Simulation for Chromatin Remodeler INO80
+
+
+
 ## 0. Background
 
-
-Coarse Graining
+### Chromatin Remodelers
+![ino80.png]
+### Coarse Graining
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
 
 
