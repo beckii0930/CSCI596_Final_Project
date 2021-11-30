@@ -11,6 +11,18 @@
 
 
 ### Coarse Graining
+
+A "3 Sites per Nucleotide" strategy is used to coarse grain DNA. Below is a sample CG scheme for a nucleotide C.
+<p align="left">
+  <img src="./Ccgscheme.png" width="100">
+</p>
+
+A "1 Sites per Amino Acid" strategy is used to coarse grain protein.Below is a sample CG scheme for a protein sequence ALA-ASP-ASP-GLU-GLN.
+<p align="left">
+  <img src="./pro_cg_scheme.png" width="100">
+</p>
+
+
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
 
 
