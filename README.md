@@ -5,7 +5,7 @@
 ## 0. Background
 
 ### Chromatin Remodelers
-![ino80.png]
+![INO80](ino80.png)
 ### Coarse Graining
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
 
