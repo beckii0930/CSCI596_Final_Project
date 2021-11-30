@@ -1,7 +1,9 @@
 # CSCI596_Final_Project
 This is a readme file for the final project for the CSCI 596 course.
-## 0. Backgrounf
+## 0. Background
 
+![AA.png]
+![CG.png]
 ## 1. Introduction
 If the C compiler on your computer is cc (also common is gcc for Gnu C
 compiler), type:
