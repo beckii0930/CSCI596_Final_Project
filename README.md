@@ -2,18 +2,24 @@
 #### Yibei Jiang
 
 
-## I. Background
+## I. Introduction
 
 ### 1. Chromatin Remodeler IN080 (PDB ID: 6fml)
 <p align="center">
   <img src="./ino80.png" width="800">
 </p>
+Chromatin Remodelers are protein complexes that can interact directly to consensed chromatin and displace nucleosomes to allow downstream Transcription Factors to access the underlying genomic DNA information. It does so using ATP hydrolysis. The recent influx of remodeler cystal structures shed lights on potential modes of nucleosome sliding but the detailed mechanism is unclear. Here, I investigated the mechanism of chromatin remodeler, INO80 using Coarse Grained Molecular Dynamics Simulations.
 
 ```
 The Biological Question: 
 What is the moleclar mechanism INO80 uses to slide the nucleosome using ATP hydrolysis?
 ```
-### 2. Coarse Grain Molecular Dynamics
+## II. Methods
+
+Insert general Flow chart here!!!!!!!!!!!!!!!!!!
+
+### 0. Coarse Grain Molecular Dynamics
+Coarse Grain MD simulations map atoms into virtual particles called beads and, as a result, reduces the number of particles in the system and simplifies calculation. Using CG MD, we can simulate larger system for a longer time. The mapping scheme of each CG situation varies and application specific. Here, I used a 3SPN.2C model that is best suited for DNA and AICG2+ model for protein. (citation here!!!!!!!!!!!!!!!!!!!)
 
 A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a sample CG scheme for a nucleotide C.
 <p align="center">
@@ -29,6 +35,15 @@ sequence GLN-GLU-ASP-ASP-ALA.
 Now we obtain the entire Initial CG structure for this system.
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
 
+### 1. Coarse Grain Molecular Dynamics
+<p align="center">
+  <img src="./workflow.png" width="400">
+</p>
+
+
+
+
+## IV. Results
 
 ## II. Introduction
 If the C compiler on your computer is cc (also common is gcc for Gnu C
@@ -36,6 +51,7 @@ compiler), type:
 cc -O -o md md.c -lm
 This will create an executable named md. To run the executable, type:
 ./md < md.in
+
 ## III. Methods
 The following files are included in this folder, in addition to this readme
 file, readme.md.
@@ -46,4 +62,4 @@ file, readme.md.
 </ul>
 ![Screen shot of MD simulation](ScreenShot.png)
 
-## IV. Results
+
