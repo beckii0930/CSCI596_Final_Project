@@ -16,8 +16,6 @@ What is the moleclar mechanism INO80 uses to slide the nucleosome using ATP hydr
 ```
 ## II. Methods
 
-Insert general Flow chart here!!!!!!!!!!!!!!!!!!
-
 ### 0. Coarse Grain Molecular Dynamics
 Coarse Grain MD simulations map atoms into virtual particles called beads and, as a result, reduces the number of particles in the system and simplifies calculation. Using CG MD, we can simulate larger system for a longer time. The mapping scheme of each CG situation varies and application specific. Here, I used a 3SPN.2C model that is best suited for DNA and AICG2+ model for protein. (citation here!!!!!!!!!!!!!!!!!!!)
 
@@ -35,9 +33,9 @@ sequence GLN-GLU-ASP-ASP-ALA.
 Now we obtain the entire Initial CG structure for this system.
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
 
-### 1. Coarse Grain Molecular Dynamics
+### 1. Coarse Grain Molecular Dynamics For Chromatin Remodeler
 <p align="center">
-  <img src="./workflow.png" width="400">
+  <img src="./workflow.png" width="1000">
 </p>
 
 
