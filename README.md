@@ -35,6 +35,9 @@ The general workflow to set up CG MD simulation for the Chromatin Remodeler is d
 A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a sample CG scheme for a nucleotide C.
 <p align="center">
   <img src="./Ccgscheme.png" width="300">
+</p>
+
+<p align="center">
   <b>Figure 3. DNA CG Scheme</b>
 </p>
 
@@ -43,15 +46,18 @@ sequence GLN-GLU-ASP-ASP-ALA.
 
 <p align="center">
   <img src="./pro_cg_scheme.png" width="300">
-  <b>Figure 3. DNA CG Scheme</b>
 </p>
 
-**Figure 4. Protein CG Scheme**
+<p align="center">
+  <b>Figure 4. Protein CG Scheme</b>
+</p>
 
 Now we obtain the entire Initial CG structure for this system.
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
 
-**Figure 5. INO80 All Atom to CG Structure**
+<p align="center">
+  <b>Figure 5. INO80 All Atom to CG Structure</b>
+</p>
 
 ### 2. Chromatin Remodeler Slides Nucleosome Using ATP Hydrolysis
 Chromatin Remodelers are SNF2 family ATPases. They contain 2 lobes in its ATPase domain. 
@@ -59,7 +65,9 @@ Chromatin Remodelers are SNF2 family ATPases. They contain 2 lobes in its ATPase
   <img src="./snf2domain.png" width="500">
 </p>
 
-**Figure 6. SNF2 ATPase Domain Structure Has 2 Catalytic Lobes**
+<p align="center">
+  <b>Figure 6. SNF2 ATPase Domain Structure Has 2 Catalytic Lobes</b>
+</p>
 
 Previous CG simulation by [Brandani and Takada,2018](https://doi.org/10.1101/297762) has simulated the ATP Hydrolysis process (apo->ATP->ADP) through changing the **Hydrogen bond strength** and **lobe1-lobe2 Go interaction strength** to facilitate conformational change that allow the lobe2 to close up to lobe1. Details such as the Energy Calculation Functions of Go Interaction can be found [here](https://www.charmm.org/wiki//index.php/Coarse_Grained_Go_Models#The_functional_form_of_the_coarse-grained_Go_model).
 Inspired by their research, I adopted similar strategy to simulate DNA translocation by INO80 using ATP hydrolysis.
@@ -67,8 +75,9 @@ Inspired by their research, I adopted similar strategy to simulate DNA transloca
   <img src="./atpaseModel.png" width="300">
 </p>
 
-**Figure 7. ATP Hydrolysis Cycle**
-
+<p align="center">
+  <b>Figure 7. ATP Hydrolysis Cycle</b>
+</p>
 
 ### 3. Define Translocase Lobe GO Contacts
 The residues belong to lobe1 and lobe2 were identified using the [Cryo-EM structure 6fml](https://www.nature.com/articles/s41586-018-0029-y). This gives us the atpase in closed conformation. A simple homology model was constructed with 6hts to obtain the lobes in open conformation by aligning each of the two lobes with the respective ones from the 6fml. A list of go interactions between lobes 1 and 2 are then generated (script: "mda_define_atp_contacts.py").
