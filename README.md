@@ -28,20 +28,22 @@ The general workflow to set up CG MD simulation for the Chromatin Remodeler is d
   <img src="./workflow.png" width="1000">
 </p>
 
-**Figure 2. CG MD Workflow for INO80**
-
+<p align="center">
+  <b>Figure 2. CG MD Workflow for INO80</b>
+</p>
 
 A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a sample CG scheme for a nucleotide C.
 <p align="center">
   <img src="./Ccgscheme.png" width="300">
+  <b>Figure 3. DNA CG Scheme</b>
 </p>
-
-**Figure 3. DNA CG Scheme**
 
 A "**1 Site per Amino Acid**" strategy is used to coarse grain protein. Below is a sample CG scheme for a protein
 sequence GLN-GLU-ASP-ASP-ALA.
+
 <p align="center">
   <img src="./pro_cg_scheme.png" width="300">
+  <b>Figure 3. DNA CG Scheme</b>
 </p>
 
 **Figure 4. Protein CG Scheme**
