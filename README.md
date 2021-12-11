@@ -8,7 +8,7 @@
 <p align="center">
   <img src="./ino80.png" width="800">
 </p>
-*Figure 1. INO80 Chromatin Remodeler Cryo-EM Structure*
+**Figure 1. INO80 Chromatin Remodeler Cryo-EM Structure**
 
 Chromatin Remodelers are protein complexes that can interact directly to consensed chromatin and displace nucleosomes to allow downstream Transcription Factors to access the underlying genomic DNA information. It does so using ATP hydrolysis. The recent influx of remodeler cystal structures shed lights on potential modes of nucleosome sliding but the detailed mechanism is unclear. Here, I investigated the mechanism of chromatin remodeler, INO80 using Coarse Grained Molecular Dynamics Simulations.
 
@@ -24,7 +24,7 @@ The general workflow to set up CG MD simulation for the Chromatin Remodeler is d
 <p align="center">
   <img src="./workflow.png" width="1000">
 </p>
-*Figure 2. CG MD Workflow for INO80*
+**Figure 2. CG MD Workflow for INO80**
 
 
 A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a sample CG scheme for a nucleotide C.
@@ -38,25 +38,25 @@ sequence GLN-GLU-ASP-ASP-ALA.
 <p align="center">
   <img src="./pro_cg_scheme.png" width="300">
 </p>
-*Figure 4. Protein CG Scheme*
+**Figure 4. Protein CG Scheme**
 
 Now we obtain the entire Initial CG structure for this system.
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
-*Figure 5. INO80 All Atom to CG Structure*
+**Figure 5. INO80 All Atom to CG Structure**
 
 ### 2. Chromatin Remodeler Slides Nucleosome Using ATP Hydrolysis
 Chromatin Remodelers are SNF2 family ATPases. They contain 2 lobes in its ATPase domain. 
 <p align="center">
   <img src="./snf2domain.png" width="1000">
 </p>
-*Figure 6. SNF2 ATPase Domain Structure Has 2 Catalytic Lobes*
+**Figure 6. SNF2 ATPase Domain Structure Has 2 Catalytic Lobes**
 
 Previous CG simulation by [Brandani and Takada,2018](https://doi.org/10.1101/297762) has simulated the ATP Hydrolysis process (apo->ATP->ADP) through changing the **Hydrogen bond strength** and **lobe1-lobe2 Go interaction strength** to facilitate conformational change that allow the lobe2 to close up to lobe1. Details such as the Energy Calculation Functions of Go Interaction can be found [here](https://www.charmm.org/wiki//index.php/Coarse_Grained_Go_Models#The_functional_form_of_the_coarse-grained_Go_model).
 Inspired by their research, I adopted similar strategy to simulate DNA translocation by INO80 using ATP hydrolysis.
 <p align="center">
   <img src="./atpaseModel.png" width="300">
 </p>
-*Figure 7. ATP Hydrolysis Cycle*
+**Figure 7. ATP Hydrolysis Cycle**
 
 
 ### 3. Define Translocase Lobe GO Contacts
