@@ -9,7 +9,9 @@
   <img src="./ino80.png" width="800">
 </p>
 
-**Figure 1. INO80 Chromatin Remodeler Cryo-EM Structure**
+<p align="center">
+  **Figure 1. INO80 Chromatin Remodeler Cryo-EM Structure**
+</p>
 
 Chromatin Remodelers are protein complexes that can interact directly to consensed chromatin and displace nucleosomes to allow downstream Transcription Factors to access the underlying genomic DNA information. It does so using ATP hydrolysis. The recent influx of remodeler cystal structures shed lights on potential modes of nucleosome sliding but the detailed mechanism is unclear. Here, I investigated the mechanism of chromatin remodeler, INO80 using Coarse Grained Molecular Dynamics Simulations.
 
