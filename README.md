@@ -82,18 +82,28 @@ Inspired by their research, I adopted similar strategy to simulate DNA transloca
 ### 3. Define Translocase Lobe GO Contacts
 The residues belong to lobe1 and lobe2 were identified using the [Cryo-EM structure 6fml](https://www.nature.com/articles/s41586-018-0029-y). This gives us the atpase in closed conformation. A simple homology model was constructed with 6hts to obtain the lobes in open conformation by aligning each of the two lobes with the respective ones from the 6fml. A list of go interactions between lobes 1 and 2 are then generated (script: "mda_define_atp_contacts.py").
 The strength of these contacts in each translocate state is set according to [Brandani and Takada,2018](https://doi.org/10.1101/297762):
-- apo: 0.0 kcal/mol (preferably open)
-- ATP: 0.6 kcal/mol (preferably closed)
-- ADP: 0.1 kcal/mol (preferably open)
+
+|state|Interaction Strength|resulting state    |
+|-----|--------------------|-------------------|
+|apo  |0.0 kcal/mol        |preferably open    |
+|ATP  |0.6 kcal/mol        |preferably closed  |
+|ADP  |0.1 kcal/mol        |preferably open    |
+
+**Table 1. Translocase lobes Go Interaction Strength per State**
 
 ### 4. Define DNA-Translocase Hydrogen Bonds
 The hydrogen bonds are based on the all-atom (charmm27) conformation of the translocase
 in complex with nucleosomal DNA as found in PDB 6fml with pdb2gmx. Hydrogen bonds with a cutoff distance of 5Å are identified (script: "mda_define_pdnsSnf2_cut5selmin.py").
 The strength of hydrogen bonds in each translocate state is set according to [Brandani and Takada,2018]
-- apo: 1.8 kBT (preferably attached to DNA)
-- ATP: 1.8 kBT (preferably attached to DNA)
-- ADP lobe1: 1.8 kBT  (preferably attached to DNA)
-- ADP lobe2: 1.44 kBT  (preferably unattach and translocate forward)
+
+|state     |H Bond Strength|resulting state                            |
+|----------|---------------|-------------------------------------------|
+|apo       |1.8 kBT        |preferably open                            |
+|ATP       |1.8 kBT        |preferably closed                          |
+|ADP lobe1 |1.8 kBT        |preferably open                            |
+|ADP lobe2 |1.44 kBT       |preferably unattach and translocate forward|
+
+**Table 2. DNA-Translocase Hydrogen Bond Strength per State**
 
 ### 5. Simulation
 I simulated the DNA sliding activity of INO80 by running a simulation of an ATPase cycle with 3 states (apo-ATP-ADP), one after another. Each state was ran 10<sup>7</sup> timesteps with interactions strength modified as described in section 3 an 4 above. This CGMD simulation is performed using [CafeMOl3.0](https://doi.org/10.1021/ct2001045) with equation of motion via Constant temperature Langevin dynamics at 300K.
