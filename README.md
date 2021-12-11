@@ -31,7 +31,7 @@ A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a 
 <p align="center">
   <img src="./Ccgscheme.png" width="300">
 </p>
-*Figure 3. DNA CG Scheme*
+**Figure 3. DNA CG Scheme**
 
 A "**1 Site per Amino Acid**" strategy is used to coarse grain protein. Below is a sample CG scheme for a protein
 sequence GLN-GLU-ASP-ASP-ALA.
@@ -47,7 +47,7 @@ Now we obtain the entire Initial CG structure for this system.
 ### 2. Chromatin Remodeler Slides Nucleosome Using ATP Hydrolysis
 Chromatin Remodelers are SNF2 family ATPases. They contain 2 lobes in its ATPase domain. 
 <p align="center">
-  <img src="./snf2domain.png" width="1000">
+  <img src="./snf2domain.png" width="500">
 </p>
 **Figure 6. SNF2 ATPase Domain Structure Has 2 Catalytic Lobes**
 
