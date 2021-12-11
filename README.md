@@ -52,13 +52,6 @@ sequence GLN-GLU-ASP-ASP-ALA.
   <b>Figure 4. Protein CG Scheme</b>
 </p>
 
-Now we obtain the entire Initial CG structure for this system.
-![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
-
-<p align="center">
-  <b>Figure 5. INO80 All Atom to CG Structure</b>
-</p>
-
 ### 2. Chromatin Remodeler Slides Nucleosome Using ATP Hydrolysis
 Chromatin Remodelers are SNF2 family ATPases. They contain 2 lobes in its ATPase domain. 
 <p align="center">
@@ -109,6 +102,13 @@ The strength of hydrogen bonds in each translocate state is set according to [Br
 I simulated the DNA sliding activity of INO80 by running a simulation of an ATPase cycle with 3 states (apo-ATP-ADP), one after another. Each state was ran 10<sup>7</sup> timesteps with interactions strength modified as described in section 3 an 4 above. This CGMD simulation is performed using [CafeMOl3.0](https://doi.org/10.1021/ct2001045) with equation of motion via Constant temperature Langevin dynamics at 300K.
 
 ## IV. Results
+
+First, we obtain the entire Initial CG structure for this system using the CG scheme described in the Methods Section.
+![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
+
+<p align="center">
+  <b>Figure 5. INO80 All Atom to CG Structure</b>
+</p>
 
 ## V. Running the simulation
 One will need to download and configure Cafemol software to run this simulation.
