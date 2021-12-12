@@ -124,7 +124,7 @@ In the videos,
 - Histone is colored Grey
 - ![](https://via.placeholder.com/15/f03c15/000000?text=+) `Lobe 1`
 - ![](https://via.placeholder.com/15/c5f015/000000?text=+) `Lobe 2`
-- ![](https://via.placeholder.com/15/1589F0/000000?text=+) `Insertion`
+- ![](https://via.placeholder.com/15/1589F0/000000?text=+) `Insertion Domain`
 
 1. The apo state
 
