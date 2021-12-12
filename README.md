@@ -127,6 +127,9 @@ In the videos,
 - ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
 
+<font color='red'>test blue color font</font>
+
+
 1. The apo state
 
 https://user-images.githubusercontent.com/25398675/145734259-953bf084-7ddf-4d16-bad6-cc73560915d7.mov
