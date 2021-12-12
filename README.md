@@ -98,8 +98,13 @@ The strength of hydrogen bonds in each translocate state is set according to [Br
 
 **Table 2. DNA-Translocase Hydrogen Bond Strength per State**
 
+The analysis scripts are written in Python v3.6 with MDAnalysis v1.0.0.
+
 ### 5. Simulation
 I simulated the DNA sliding activity of INO80 by running a simulation of an ATPase cycle with 3 states (apo-ATP-ADP), one after another. Each state was ran 10<sup>7</sup> timesteps with interactions strength modified as described in section 3 an 4 above. This CGMD simulation is performed using [CafeMOl3.0](https://doi.org/10.1021/ct2001045) with equation of motion via Constant temperature Langevin dynamics at 300K.
+
+The last frame of the .dcd trajectory obtained from simulation is used as the intial structure to pt2.inp and pt3.inp with changes in parameters in the bond strength files to simulate a whole ATP Hydrolysis cycle. 
+
 
 ## IV. Results
 
@@ -117,12 +122,18 @@ To identify GO contacts:
 python3 mda_define_atp_contacts.py
 ```
 
-To identify hydrogen bonds:
+To identify hydrogen bonds between histone and DNA:
+```
+python3 mda_define_nsgohb.py
+```
+
+
+To identify hydrogen bonds between translocase and :
 ```
 python3 mda_define_pdnsSnf2_cut5selmin.py
 ```
 
-To run the simulation with input file pi.inp, type:
+To run the simulation with input file pt1.inp, type:
 ```
-cafemol p1.inp
+cafemol pt1.inp
 ```
