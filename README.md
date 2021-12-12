@@ -126,10 +126,8 @@ https://user-images.githubusercontent.com/25398675/145734259-953bf084-7ddf-4d16-
 https://user-images.githubusercontent.com/25398675/145734278-02dfc28b-47d3-47bc-86f5-0f86acb147d0.mov
 
 3. The ADP state
- 
-https://user-images.githubusercontent.com/25398675/145734318-8ef0f06c-2109-4d9d-ad98-abaf739b5894.mov
 
-
+https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-824d-ee4d52e42478.mov
 
 ## V. Running the simulation
 One will need to download and configure Cafemol software to run this simulation.
