@@ -115,6 +115,22 @@ First, we obtain the entire Initial CG structure for this system using the CG sc
   <b>Figure 5. INO80 All Atom to CG Structure</b>
 </p>
 
+Next, we started simulation and below is the 2 second snapshorts of the 3 state ATP Hydrolysis Cycle.
+
+1. The apo state
+
+https://user-images.githubusercontent.com/25398675/145734259-953bf084-7ddf-4d16-bad6-cc73560915d7.mov
+
+2. The ATP state
+ 
+https://user-images.githubusercontent.com/25398675/145734278-02dfc28b-47d3-47bc-86f5-0f86acb147d0.mov
+
+3. The ADP state
+ 
+https://user-images.githubusercontent.com/25398675/145734318-8ef0f06c-2109-4d9d-ad98-abaf739b5894.mov
+
+
+
 ## V. Running the simulation
 One will need to download and configure Cafemol software to run this simulation.
 To identify GO contacts:
