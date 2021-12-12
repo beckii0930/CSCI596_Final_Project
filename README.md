@@ -115,7 +115,16 @@ First, we obtain the entire Initial CG structure for this system using the CG sc
   <b>Figure 5. INO80 All Atom to CG Structure</b>
 </p>
 
-Next, we started simulation and below is the 2 second snapshorts of the 3 state ATP Hydrolysis Cycle.
+Next, we started simulation and below is the 2 second snapshorts of the 3 state ATP Hydrolysis Cycle. 
+In the videos, 
+-  is colored Cyan
+- Lobe 2 is colored Green
+- Insertion is colored Yellow
+- DNA is colored Orange 
+- Histone is colored Grey
+- ![Lobe 1](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
 
 1. The apo state
 
