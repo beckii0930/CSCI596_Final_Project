@@ -101,7 +101,8 @@ The strength of hydrogen bonds in each translocate state is set according to [Br
 The analysis scripts are written in Python v3.6 with MDAnalysis v1.0.0.
 
 ### 5. Simulation
-I simulated the DNA sliding activity of INO80 by running a simulation of an ATPase cycle with 3 states (apo-ATP-ADP), one after another. Each state was ran 10<sup>5</sup> timesteps with interactions strength modified as described in section 3 an 4 above. This CG MD simulation is performed using [CafeMOl3.0](https://doi.org/10.1021/ct2001045) with equation of motion via Constant temperature Langevin dynamics at 300K.
+First, the CG initial state for INO80 is mimimized using Steepest Descend algorithm for 2X10<sup>7</sup> time steps
+Then, I began production run for the DNA sliding activity of INO80 by running a simulation of an ATPase cycle with 3 states (apo-ATP-ADP), one after another. Each state was ran 10<sup>5</sup> timesteps with interactions strength modified as described in section 3 an 4 above. This CG MD simulation is performed using [CafeMOl3.0](https://doi.org/10.1021/ct2001045) with equation of motion via Constant temperature Langevin dynamics at 300K.
 
 The last frame of the .dcd trajectory obtained from simulation is used as the intial structure to input file for the next states with changes in parameters in the bond strength files to simulate a whole ATP Hydrolysis cycle. 
 
