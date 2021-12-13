@@ -145,7 +145,7 @@ One will need to download and configure Cafemol software to run this simulation.
 |hbonds            | Code to genenrate Hydrogen Bond parameter files|
 |model             | Code to genenrate Translocase parameter files  |
 |ninfo             | All the parameter files needed for simulation  |
-|para3_exv1        |1ssns: Force Fields for CG models               |
+|para3_exv.1ssns   | Force Fields for CG models               |
 |respac_histones   | Code to genenrate Histone Surface charges      |
 |respac_translocase| Code to genenrate Translocase Surface charges  |
 
