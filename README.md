@@ -136,23 +136,34 @@ https://user-images.githubusercontent.com/25398675/145734278-02dfc28b-47d3-47bc-
 https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-824d-ee4d52e42478.mov
 
 ## IV. Running Simulations
-One will need to download and configure Cafemol software to run this simulation.
+One will need to download and configure Cafemol software to run this simulation. All files needed to run simulation is in the ino80_6fml folder.
+|Folder            |Purpose                                         |
+|------------------|------------------------------------------------|
+|\*.inp            | input files to run each part of the simulation |
+|DNA_3spn2c        | DNA parameter files                            |
+|hbonds            | Code to genenrate Hydrogen Bond parameter files|
+|model             | Code to genenrate Translocase parameter files  |
+|ninfo             | All the parameter files needed for simulation  |
+|para3_exv1        |1ssns: Force Fields for CG models               |
+|respac_histones   | Code to genenrate Histone Surface charges      |
+|respac_translocase| Code to genenrate Translocase Surface charges  |
+
 To identify GO contacts:
 ```
-python3 mda_define_atp_contacts.py
+python3 ./ino80_6fml/model/mda_define_atp_contacts.py
 ```
 
 To identify hydrogen bonds between histone and DNA:
 ```
-python3 mda_define_nsgohb.py
+python3 ./ino80_6fml/ninfo/mda_define_nsgohb.py
 ```
 
-To identify hydrogen bonds between translocase and :
+To identify hydrogen bonds between translocase and DNA:
 ```
-python3 mda_define_pdnsSnf2_cut5selmin.py
+python3 ./ino80_6fml/hbonds/mda_define_pdnsIno80_cut5selmin.py
 ```
 
 To run the simulation with input file pt1.inp, type:
 ```
-cafemol pt1.inp
+cafemol ./ino80_6fml/pt1.inp
 ```
