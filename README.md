@@ -32,7 +32,8 @@ The general workflow to set up CG MD simulation for the Chromatin Remodeler is d
   <b>Figure 2. CG MD Workflow for INO80</b>
 </p>
 
-A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a sample CG scheme for a nucleotide C.
+A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. 
+Below is a sample CG scheme for a nucleotide Cytosine.
 <p align="center">
   <img src="./Ccgscheme.png" width="300">
 </p>
@@ -41,8 +42,8 @@ A "**3 Sites per Nucleotide**" strategy is used to coarse grain DNA. Below is a 
   <b>Figure 3. DNA CG Scheme</b>
 </p>
 
-A "**1 Site per Amino Acid**" strategy is used to coarse grain protein. Below is a sample CG scheme for a protein
-sequence GLN-GLU-ASP-ASP-ALA.
+A "**1 Site per Amino Acid**" strategy is used to coarse grain proteins. 
+Below is a sample CG scheme for a protein with amino acid sequence GLN-GLU-ASP-ASP-ALA.
 
 <p align="center">
   <img src="./pro_cg_scheme.png" width="300">
@@ -59,21 +60,20 @@ Chromatin Remodelers are SNF2 family ATPases. They contain 2 lobes in its ATPase
 </p>
 
 <p align="center">
-  <b>Figure 6. SNF2 ATPase Domain Structure Has 2 Catalytic Lobes</b>
+  <b>Figure 5. SNF2 ATPase Domain Structure Has 2 Catalytic Lobes</b>
 </p>
 
-Previous CG simulation by [Brandani and Takada,2018](https://doi.org/10.1101/297762) has simulated the ATP Hydrolysis process (apo->ATP->ADP) through changing the **Hydrogen bond strength** and **lobe1-lobe2 Go interaction strength** to facilitate conformational change that allow the lobe2 to close up to lobe1. Details such as the Energy Calculation Functions of Go Interaction can be found [here](https://www.charmm.org/wiki//index.php/Coarse_Grained_Go_Models#The_functional_form_of_the_coarse-grained_Go_model).
-Inspired by their research, I adopted similar strategy to simulate DNA translocation by INO80 using ATP hydrolysis.
+Previous CG simulation by [Brandani and Takada,2018](https://doi.org/10.1101/297762) has simulated the ATP Hydrolysis process (apo->ATP->ADP) through changing the **Hydrogen bond strength** and **lobe1-lobe2 Go interaction strength** to facilitate conformational change that allow the Lobe 2 to close up to Lobe 1. The details for Energy Calculation Functions of Go Interaction can be found [here](https://www.charmm.org/wiki//index.php/Coarse_Grained_Go_Models#The_functional_form_of_the_coarse-grained_Go_model). Inspired by their research, I adopted similar strategy to simulate DNA translocation by INO80 using ATP hydrolysis.
 <p align="center">
   <img src="./atpaseModel.png" width="300">
 </p>
 
 <p align="center">
-  <b>Figure 7. ATP Hydrolysis Cycle</b>
+  <b>Figure 6. ATP Hydrolysis Cycle</b>
 </p>
 
 ### 3. Define Translocase Lobe GO Contacts
-The residues belong to lobe1 and lobe2 were identified using the [Cryo-EM structure 6fml](https://www.nature.com/articles/s41586-018-0029-y). This gives us the atpase in closed conformation. A simple homology model was constructed with 6hts to obtain the lobes in open conformation by aligning each of the two lobes with the respective ones from the 6fml. A list of go interactions between lobes 1 and 2 are then generated (script: "mda_define_atp_contacts.py").
+The residues belong to lobe1 and lobe2 were identified using the [Cryo-EM structure 6fml](https://www.nature.com/articles/s41586-018-0029-y). This gives us the atpase in closed conformation. A simple homology model was constructed with [6hts](https://www.rcsb.org/structure/6HTS) to obtain the lobes in open conformation by aligning each of the two lobes with the respective ones from the [6fml](https://www.rcsb.org/structure/6fml) . A list of go interactions between lobes 1 and 2 are then generated (script: "mda_define_atp_contacts.py").
 The strength of these contacts in each translocate state is set according to [Brandani and Takada,2018](https://doi.org/10.1101/297762):
 
 |state|Interaction Strength|resulting state    |
@@ -87,7 +87,7 @@ The strength of these contacts in each translocate state is set according to [Br
 ### 4. Define DNA-Translocase Hydrogen Bonds
 The hydrogen bonds are based on the all-atom (charmm27) conformation of the translocase
 in complex with nucleosomal DNA as found in PDB 6fml with pdb2gmx. Hydrogen bonds with a cutoff distance of 5Å are identified (script: "mda_define_pdnsSnf2_cut5selmin.py").
-The strength of hydrogen bonds in each translocate state is set according to [Brandani and Takada,2018]
+The strength of hydrogen bonds in each translocate state is set according to [Brandani and Takada,2018](https://doi.org/10.1101/297762)
 
 |state     |H Bond Strength|resulting state                            |
 |----------|---------------|-------------------------------------------|
@@ -101,10 +101,9 @@ The strength of hydrogen bonds in each translocate state is set according to [Br
 The analysis scripts are written in Python v3.6 with MDAnalysis v1.0.0.
 
 ### 5. Simulation
-I simulated the DNA sliding activity of INO80 by running a simulation of an ATPase cycle with 3 states (apo-ATP-ADP), one after another. Each state was ran 10<sup>7</sup> timesteps with interactions strength modified as described in section 3 an 4 above. This CGMD simulation is performed using [CafeMOl3.0](https://doi.org/10.1021/ct2001045) with equation of motion via Constant temperature Langevin dynamics at 300K.
+I simulated the DNA sliding activity of INO80 by running a simulation of an ATPase cycle with 3 states (apo-ATP-ADP), one after another. Each state was ran 10<sup>5</sup> timesteps with interactions strength modified as described in section 3 an 4 above. This CG MD simulation is performed using [CafeMOl3.0](https://doi.org/10.1021/ct2001045) with equation of motion via Constant temperature Langevin dynamics at 300K.
 
-The last frame of the .dcd trajectory obtained from simulation is used as the intial structure to pt2.inp and pt3.inp with changes in parameters in the bond strength files to simulate a whole ATP Hydrolysis cycle. 
-
+The last frame of the .dcd trajectory obtained from simulation is used as the intial structure to input file for the next states with changes in parameters in the bond strength files to simulate a whole ATP Hydrolysis cycle. 
 
 ## IV. Results
 
@@ -112,16 +111,16 @@ First, we obtain the entire Initial CG structure for this system using the CG sc
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
 
 <p align="center">
-  <b>Figure 5. INO80 All Atom to CG Structure</b>
+  <b>Figure 7. INO80 All Atom to CG Structure</b>
 </p>
 
-Next, we started simulation and below is the 2 second snapshorts of the 3 state ATP Hydrolysis Cycle. 
+Next, we started simulation and below is the 2 second snapshots of the 3 state ATP Hydrolysis Cycle. 
 In the videos below, 
 - ![](https://via.placeholder.com/15/00FFFF/000000?text=+) `Lobe 1` is colored Cyan
 - ![](https://via.placeholder.com/15/00FF00/000000?text=+) `Lobe 2` is colored Green
 - ![](https://via.placeholder.com/15/FFFF00/000000?text=+) `Insertion Domain` is colored Yellow
 - ![](https://via.placeholder.com/15/FFA500/000000?text=+) `DNA` is colored Orange
-- ![](https://via.placeholder.com/15/808080/000000?text=+) `Histone` is colored Grey
+- ![](https://via.placeholder.com/15/808080/000000?text=+) `Histones` are colored Grey
 
 ### 1. The apo state
 
@@ -146,7 +145,6 @@ To identify hydrogen bonds between histone and DNA:
 ```
 python3 mda_define_nsgohb.py
 ```
-
 
 To identify hydrogen bonds between translocase and :
 ```
