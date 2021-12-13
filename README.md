@@ -137,9 +137,10 @@ https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-
 
 ## IV. Running Simulations
 One will need to download and configure Cafemol software to run this simulation. All files needed to run simulation is in the ino80_6fml folder.
+
 |Folder            |Purpose                                         |
 |------------------|------------------------------------------------|
-|\*.inp            | input files to run each part of the simulation |
+|*.inp             | input files to run each part of the simulation |
 |DNA_3spn2c        | DNA parameter files                            |
 |hbonds            | Code to genenrate Hydrogen Bond parameter files|
 |model             | Code to genenrate Translocase parameter files  |
@@ -147,6 +148,9 @@ One will need to download and configure Cafemol software to run this simulation.
 |para3_exv1        |1ssns: Force Fields for CG models               |
 |respac_histones   | Code to genenrate Histone Surface charges      |
 |respac_translocase| Code to genenrate Translocase Surface charges  |
+
+
+**Table 3. Simulation Folder Architecture**
 
 To identify GO contacts:
 ```
@@ -167,3 +171,6 @@ To run the simulation with input file pt1.inp, type:
 ```
 cafemol ./ino80_6fml/pt1.inp
 ```
+## IV. Conclusion
+
+In this repo, I completed simulations for the INO80 chromatin remodeler and demonstrated the general workflow to simulate ATP Hydrolysis Cycle of this system. The next phase is to examine the simulated trajactory in detail to see whether we have achieved expected INO80 translocase behavior.
