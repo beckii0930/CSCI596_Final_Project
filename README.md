@@ -20,7 +20,7 @@ The Biological Question:
 What is the moleclar mechanism INO80 uses to slide the nucleosome using ATP hydrolysis?
 ```
 ## II. Methods
-### 0. Coarse Grain Molecular Dynamics
+### 1. Coarse Grain Molecular Dynamics
 Coarse Grain MD simulations map atoms into virtual particles called beads and, as a result, reduces the number of particles in the system and simplifies calculation. Using CG MD, we can simulate larger system for a longer time. The mapping scheme of each CG situation varies and application specific. Here, I used a 3SPN.2C model by [Hinckley et al.,2013](https://doi.org/10.1063/1.4822042) that is best suited for DNA and AICG2+ model by [Li et al.,2014](https://doi.org/10.1073/pnas.1201807109) for protein.
 
 The general workflow to set up CG MD simulation for the Chromatin Remodeler is described below:
@@ -123,19 +123,19 @@ In the videos below,
 - ![](https://via.placeholder.com/15/FFA500/000000?text=+) `DNA` is colored Orange
 - ![](https://via.placeholder.com/15/808080/000000?text=+) `Histone` is colored Grey
 
-1. The apo state
+### 1. The apo state
 
 https://user-images.githubusercontent.com/25398675/145734259-953bf084-7ddf-4d16-bad6-cc73560915d7.mov
 
-2. The ATP state
+### 2. The ATP state
  
 https://user-images.githubusercontent.com/25398675/145734278-02dfc28b-47d3-47bc-86f5-0f86acb147d0.mov
 
-3. The ADP state
+### 3. The ADP state
 
 https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-824d-ee4d52e42478.mov
 
-## V. Running the simulation
+## V. Running Simulations
 One will need to download and configure Cafemol software to run this simulation.
 To identify GO contacts:
 ```
