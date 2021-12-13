@@ -117,11 +117,11 @@ First, we obtain the entire Initial CG structure for this system using the CG sc
 
 Next, we started simulation and below is the 2 second snapshorts of the 3 state ATP Hydrolysis Cycle. 
 In the videos below, 
-- ![](https://via.placeholder.com/15/00FFFF/000000?text=+) `Lobe 1 is colored Cyan`
-- ![](https://via.placeholder.com/15/00FF00/000000?text=+) `Lobe 2 is colored Green`
-- ![](https://via.placeholder.com/15/FFFF00/000000?text=+) `Insertion Domain is colored Yellow`
-- ![](https://via.placeholder.com/15/FFA500/000000?text=+) `DNA is colored Orange`
-- ![](https://via.placeholder.com/15/808080/000000?text=+) `Histone is colored Grey`
+- ![](https://via.placeholder.com/15/00FFFF/000000?text=+) `Lobe 1` is colored Cyan
+- ![](https://via.placeholder.com/15/00FF00/000000?text=+) `Lobe 2` is colored Green
+- ![](https://via.placeholder.com/15/FFFF00/000000?text=+) `Insertion Domain` is colored Yellow
+- ![](https://via.placeholder.com/15/FFA500/000000?text=+) `DNA` is colored Orange
+- ![](https://via.placeholder.com/15/808080/000000?text=+) `Histone` is colored Grey
 
 1. The apo state
 
