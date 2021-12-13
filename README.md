@@ -105,7 +105,7 @@ I simulated the DNA sliding activity of INO80 by running a simulation of an ATPa
 
 The last frame of the .dcd trajectory obtained from simulation is used as the intial structure to input file for the next states with changes in parameters in the bond strength files to simulate a whole ATP Hydrolysis cycle. 
 
-## IV. Results
+## III. Results
 
 First, we obtain the entire Initial CG structure for this system using the CG scheme described in the Methods Section.
 ![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
@@ -134,7 +134,7 @@ https://user-images.githubusercontent.com/25398675/145734278-02dfc28b-47d3-47bc-
 
 https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-824d-ee4d52e42478.mov
 
-## V. Running Simulations
+## IV. Running Simulations
 One will need to download and configure Cafemol software to run this simulation.
 To identify GO contacts:
 ```
