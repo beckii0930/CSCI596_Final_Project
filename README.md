@@ -172,7 +172,7 @@ Next, histone RMSF is investigated. Solid lines indicate one copies of each hist
 Last, we investigated histone octamer fluctuation across 3 states. H2A fluctuation is the smallest which can point to stabilizing forces of the ATPase with Histone H2A.
 
 <p align="center">
-  <img src="./RMSF_Histone_Per_Domain.png" width="1000">
+  <img src="./RMSF_Histone_Per_Domain.png" width="800">
 </p>
 
 <p align="center">
