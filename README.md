@@ -135,6 +135,50 @@ https://user-images.githubusercontent.com/25398675/145734278-02dfc28b-47d3-47bc-
 
 https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-824d-ee4d52e42478.mov
 
+Last, we performed RMSD and RMSF analysis for the trajectory:
+#### 1. RMSD: 
+RMSD analysis aim to understand the root mean square deviation of the structure compared to the initial structue over time. Below shows the RMSD of the ATPase Lobe1, ATPase Lobe2, Histone, and DNA. We see that DNA has the greatest movement due to its 3' end and 5' end linkers. The Lobe 2 has greater movements compared to Lobe 1. Lobe 2 has stabilized more in ATP and ADP states compared to apo state. Moreover, the histone movements are similar. 
+<p align="center">
+  <img src="./RMSD.png" width="1000">
+</p>
+
+<p align="center">
+  <b>Figure 8. RMSD plot</b>
+</p>
+
+#### 2. RMSF: 
+RMSF analysis is used to further investigate which parts of the protein or DNA has the greated root mean square fluctuation compare to a computed middle structure. 
+
+First, DNA and ATPase RMSF is plotted. The areas close to the domain ends show the greatest flucuation. DNA dyad position is indicated by a verticle line and we can see the DNA exhibits lots of flucuations in the dyad region and demonstrates a periodic trend.
+
+<p align="center">
+  <img src="./RMSF_DNA_ATPase.png" width="1000">
+</p>
+
+<p align="center">
+  <b>Figure 9. RMSF of 2 Catalytic Lobes and DNA</b>
+</p>
+
+Next, histone RMSF is investigated. Solid lines indicate one copies of each histone octamers, whereas the dotted lines indicate the second copy of them. In general, the movements of the 2 copies fluctuates in a similar manner.
+
+<p align="center">
+  <img src="./RMSF_Histone_Per_State.png" width="1000">
+</p>
+
+<p align="center">
+  <b>Figure 10. RMSF of Histone Octamers in Each State</b>
+</p>
+
+Last, we investigated histone octamer fluctuation across 3 states. H2A fluctuation is the smallest which can point to stabilizing forces of the ATPase with Histone H2A.
+
+<p align="center">
+  <img src="./RMSF_Histone_Per_Domain.png" width="600">
+</p>
+
+<p align="center">
+  <b>Figure 11. RMSF of Each Histone Octamer in 3 States </b>
+</p>
+
 ## IV. Running Simulations
 One will need to download and configure Cafemol software to run this simulation. All files needed to run simulation is in the ino80_6fml folder.
 
