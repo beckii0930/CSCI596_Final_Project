@@ -152,7 +152,7 @@ RMSF analysis is used to further investigate which parts of the protein or DNA h
 First, DNA and ATPase RMSF is plotted. The areas close to the domain ends show the greatest flucuation. DNA dyad position is indicated by a verticle line and we can see the DNA exhibits lots of flucuations in the dyad region and demonstrates a periodic trend.
 
 <p align="center">
-  <img src="./RMSF_DNA_ATPase.png" width="1000">
+  <img src="./RMSF_DNA_ATPase.png" width="120%">
 </p>
 
 <p align="center">
@@ -162,7 +162,7 @@ First, DNA and ATPase RMSF is plotted. The areas close to the domain ends show t
 Next, histone RMSF is investigated. Solid lines indicate one copies of each histone octamers, whereas the dotted lines indicate the second copy of them. In general, the movements of the 2 copies fluctuates in a similar manner.
 
 <p align="center">
-  <img src="./RMSF_Histone_Per_State.png" width="1000">
+  <img src="./RMSF_Histone_Per_State.png" width="1500">
 </p>
 
 <p align="center">
@@ -172,7 +172,7 @@ Next, histone RMSF is investigated. Solid lines indicate one copies of each hist
 Last, we investigated histone octamer fluctuation across 3 states. H2A fluctuation is the smallest which can point to stabilizing forces of the ATPase with Histone H2A.
 
 <p align="center">
-  <img src="./RMSF_Histone_Per_Domain.png" width="600">
+  <img src="./RMSF_Histone_Per_Domain.png" width="1000">
 </p>
 
 <p align="center">
