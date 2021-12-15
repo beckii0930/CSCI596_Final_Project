@@ -157,7 +157,7 @@ RMSF analysis is used to further investigate to pinpoint which parts of the prot
 
 First, DNA and ATPase RMSF is plotted. The areas close to the domain ends show the greatest flucuation. The RMSF of Lobe2 shows greater fluctuation compared that of Lobe1 as we have seen in RMSD. 
 
-For DNA, the nucleosome DNA dyad position is indicated by a verticle line and we can see the DNA exhibits lots of flucuations in the dyad region and demonstrates a periodic trend. It is well known that the nucleosome DNA has a 10bp periodicity. This flucuation can explain the DNA sliding mechanims by remodeler couples rotation rather than simply slides on the nucleosome. In the latter case, the periodicity will not show in the RMSF plot. 
+For DNA, the nucleosome DNA dyad position is indicated by a verticle line and we can see the DNA exhibits lots of flucuations in the dyad region and demonstrates a periodic trend. It is well known that the nucleosome DNA has a 10bp periodicity. This flucuation may explain the DNA sliding mechanims by remodeler couples rotation rather than simply sliding on the nucleosome. In the latter case, the RMSF plot will not have such periodicity. 
 
 <p align="center">
   <img src="./RMSF_DNA_ATPase.png" width="120%">
