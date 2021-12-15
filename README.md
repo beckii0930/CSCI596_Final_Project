@@ -137,7 +137,13 @@ https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-
 
 Last, we performed RMSD and RMSF analysis for the trajectory:
 #### 1. RMSD: 
-RMSD analysis aims to understand the root mean square deviation of the structure compared to the initial structue over time. Below shows the RMSD of the ATPase Lobe1, ATPase Lobe2, Histone, and DNA. We see that DNA has the greatest movement due to its 3' end and 5' end linkers. The Lobe 2 has greater movements compared to Lobe 1. Lobe 2 has stabilized more in ATP and ADP states compared to apo state. In ATP state, we increased the contact between Lobe1 and Lobe2, which can explain the lower RMSD of Lobe2. In ADP state, we lowered contact strength between Lobe 2 and DNA, which is reflected by increase RMSD of lobe 2. Last, the histone movements are similar. 
+RMSD analysis aims to understand the root mean square deviation of the structure compared to the initial structue over time. Below shows the RMSD of the ATPase Lobe1, ATPase Lobe2, Histone, and DNA. 
+
+We see that DNA has the greatest movement due to its 3' end and 5' end linkers. 
+
+The Lobe 2 has greater movements compared to Lobe 1. Lobe 2 has stabilized more in ATP and ADP states compared to apo state. In ATP state, we increased the contact between Lobe1 and Lobe2, which can explain the lower RMSD of Lobe2. In ADP state, we lowered contact strength between Lobe 2 and DNA, which is reflected by increase RMSD of lobe 2. 
+
+Last, the histone movements are similar. 
 <p align="center">
   <img src="./RMSD.png" width="140%">
 </p>
