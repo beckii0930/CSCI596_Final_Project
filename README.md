@@ -137,7 +137,7 @@ https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-
 
 Last, we performed RMSD and RMSF analysis for the trajectory:
 #### 1. RMSD: 
-RMSD analysis aims to understand the root mean square deviation of the structure compared to the initial structue over time. Below shows the RMSD of the ATPase Lobe1, ATPase Lobe2, Histone, and DNA. We see that DNA has the greatest movement due to its 3' end and 5' end linkers. The Lobe 2 has greater movements compared to Lobe 1. Lobe 2 has stabilized more in ATP and ADP states compared to apo state. Moreover, the histone movements are similar. 
+RMSD analysis aims to understand the root mean square deviation of the structure compared to the initial structue over time. Below shows the RMSD of the ATPase Lobe1, ATPase Lobe2, Histone, and DNA. We see that DNA has the greatest movement due to its 3' end and 5' end linkers. The Lobe 2 has greater movements compared to Lobe 1. Lobe 2 has stabilized more in ATP and ADP states compared to apo state. In ATP state, we increased the contact between Lobe1 and Lobe2, which can explain the lower RMSD of Lobe2. In ADP state, we lowered contact strength between Lobe 2 and DNA, which is reflected by increase RMSD of lobe 2. Last, the histone movements are similar. 
 <p align="center">
   <img src="./RMSD.png" width="140%">
 </p>
@@ -147,9 +147,11 @@ RMSD analysis aims to understand the root mean square deviation of the structure
 </p>
 
 #### 2. RMSF: 
-RMSF analysis is used to further investigate which parts of the protein or DNA has the greated root mean square fluctuation compare to a computed middle structure. 
+RMSF analysis is used to further investigate to pinpoint which parts of the protein or DNA have the greated root mean square fluctuation compare to a computed "middle" structure. 
 
-First, DNA and ATPase RMSF is plotted. The areas close to the domain ends show the greatest flucuation. DNA dyad position is indicated by a verticle line and we can see the DNA exhibits lots of flucuations in the dyad region and demonstrates a periodic trend.
+First, DNA and ATPase RMSF is plotted. The areas close to the domain ends show the greatest flucuation. The RMSF of Lobe2 shows greater fluctuation compared that of Lobe1 as we have seen in RMSD. 
+
+For DNA, the nucleosome DNA dyad position is indicated by a verticle line and we can see the DNA exhibits lots of flucuations in the dyad region and demonstrates a periodic trend. It is well known that the nucleosome DNA has a 10bp periodicity. This flucuation can explain the DNA sliding mechanims by remodeler couples rotation rather than simply slides on the nucleosome. In the latter case, the periodicity will not show in the RMSF plot. 
 
 <p align="center">
   <img src="./RMSF_DNA_ATPase.png" width="120%">
@@ -159,7 +161,7 @@ First, DNA and ATPase RMSF is plotted. The areas close to the domain ends show t
   <b>Figure 9. RMSF of 2 Catalytic Lobes and DNA</b>
 </p>
 
-Next, histone RMSF is investigated. Solid lines indicate one copies of each histone octamers, whereas the dotted lines indicate the second copy of them. In general, the movements of the 2 copies fluctuates in a similar manner.
+Next, histone RMSF is investigated. Solid lines indicate one copy of each histone octamer, whereas the dotted lines indicate the second copy of that. In general, the movements of the 2 copies fluctuates in a similar manner.
 
 <p align="center">
   <img src="./RMSF_Histone_Per_State.png" width="1500">
@@ -169,7 +171,7 @@ Next, histone RMSF is investigated. Solid lines indicate one copies of each hist
   <b>Figure 10. RMSF of Histone Octamers in Each State</b>
 </p>
 
-Last, we investigated histone octamer fluctuation across 3 states. H2A fluctuation is the smallest which can point to stabilizing forces of the ATPase with Histone H2A.
+Last, we investigated histone octamer fluctuations across 3 states: apo, ADP, ATP. H2A fluctuation is the smallest which can point to stabilizing forces of the ATPase with Histone H2A. This can be explained by remodeler ATPase interactions with histone acidic patch formed by H2A-H2B.
 
 <p align="center">
   <img src="./RMSF_Histone_Per_Domain.png" width="800">
@@ -217,4 +219,4 @@ cafemol ./ino80_6fml/pt1.inp
 ```
 ## IV. Conclusion
 
-In this repo, I completed simulations for the INO80 chromatin remodeler and demonstrated the general workflow to simulate ATP Hydrolysis Cycle of this system. The next phase is to examine the simulated trajactory in detail to see whether we have achieved expected INO80 translocase behavior.
+In this repo, I completed simulations for the INO80 chromatin remodeler and demonstrated the general workflow to simulate ATP Hydrolysis Cycle of this system. The RMSD and RMSF plots are used to examine the simulated trajactory to see the behaviour of the system. In the next phase, we need to perform more analysis, such as free energy profile in order to see whether we have achieved expected INO80 translocation activity.
