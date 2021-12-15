@@ -141,7 +141,7 @@ RMSD analysis aims to understand the root mean square deviation of the structure
 
 We see that DNA has the greatest movement due to its 3' end and 5' end linkers. 
 
-The Lobe 2 has greater movements compared to Lobe 1. Lobe 2 has stabilized more in ATP and ADP states compared to apo state. In ATP state, we increased the contact between Lobe1 and Lobe2, which can explain the lower RMSD of Lobe2. In ADP state, we lowered contact strength between Lobe 2 and DNA, which is reflected by increase RMSD of lobe 2. 
+The Lobe 2 has greater movements compared to Lobe 1. Lobe 2 has stabilized more in ATP and ADP states compared to apo state. In ATP state, we increased the contact between Lobe 1 and Lobe 2, which can explain the lower RMSD of Lobe2. In ADP state, we lowered contact strength between Lobe 2 and DNA, which is reflected by increased RMSD of Lobe 2. 
 
 Last, the histone movements are similar. 
 <p align="center">
