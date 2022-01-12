@@ -53,6 +53,7 @@ Below is a sample CG scheme for a protein with amino acid sequence GLN-GLU-ASP-A
   <b>Figure 4. Protein CG Scheme</b>
 </p>
 
+
 ### 2. Chromatin Remodeler Slides Nucleosome Using ATP Hydrolysis
 Chromatin Remodelers are SNF2 family ATPases. They contain 2 lobes in its ATPase domain. 
 <p align="center">
