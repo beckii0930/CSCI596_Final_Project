@@ -39,13 +39,15 @@ Below is a sample CG scheme for a nucleotide Cytosine.
 </p>
 
 The potential energy calculations for DNA includes bonded potentials and non-bonded potentials:
-$$U_{bonded} = U_{bond} + U_{bend} + U_{torsion}$$
-$$U_{non-bonded} = U_{excluded volume} + U_{base stacking} + U_{cross stacking} + U_{base pairing} + U_{electrostatics}$$, 
-where the detailed calculations are described in [Hinckley et al.,2013](https://doi.org/10.1063/1.4822042).
+<p align="center">
+  <img src="./3snp2c.png" width="500">
+</p>
 
 <p align="center">
-  Equation 1. SPN.2C Potential for DNA
+  Equation 1. 3SPN.2C Potential for DNA
 </p>
+where the detailed calculations are described in [Hinckley et al.,2013](https://doi.org/10.1063/1.4822042).
+
 
 <p align="center">
   <b>Figure 3. DNA CG Scheme</b>
@@ -63,7 +65,7 @@ Below is a sample CG scheme for a protein with amino acid sequence GLN-GLU-ASP-A
 </p>
 
 <p align="center">
-  ![image](https://user-images.githubusercontent.com/25398675/149422097-6e239df8-906a-4b99-a6ca-e5fcf4aea1ac.png)
+  <img src="./aicg2+.png" width="500">
 </p>
 
 <p align="center">
