@@ -40,14 +40,13 @@ Below is a sample CG scheme for a nucleotide Cytosine.
 
 The potential energy calculations for DNA includes bonded potentials and non-bonded potentials:
 <p align="center">
-  <img src="./3snp2c.png" width="500">
+  <img src="./3snp.2c.png" width="500">
 </p>
 
 <p align="center">
   Equation 1. 3SPN.2C Potential for DNA
 </p>
 where the detailed calculations are described in [Hinckley et al.,2013](https://doi.org/10.1063/1.4822042).
-
 
 <p align="center">
   <b>Figure 3. DNA CG Scheme</b>
@@ -64,6 +63,7 @@ Below is a sample CG scheme for a protein with amino acid sequence GLN-GLU-ASP-A
   <b>Figure 4. Protein CG Scheme</b>
 </p>
 
+The potential calculations are described below and details explained in the S1 Text in [Li et al.,2014](https://doi.org/10.1073/pnas.1201807109).
 <p align="center">
   <img src="./aicg2+.png" width="500">
 </p>
