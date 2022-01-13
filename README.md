@@ -40,7 +40,7 @@ Below is a sample CG scheme for a nucleotide Cytosine.
 
 The potential energy calculations for DNA includes bonded potentials and non-bonded potentials:
 <p align="center">
-  <img src="./3spn2c.png" width="500">
+  <img src="./3spn.2c.png" width="500">
 </p>
 
 <p align="center">
