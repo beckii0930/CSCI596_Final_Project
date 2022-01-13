@@ -126,15 +126,15 @@ In the videos below,
 
 ### 1. The apo state
 
-https://user-images.githubusercontent.com/25398675/145734259-953bf084-7ddf-4d16-bad6-cc73560915d7.mov
+https://user-images.githubusercontent.com/25398675/149243670-902e0e03-bc89-4086-abda-1d688983e5db.mov
 
 ### 2. The ATP state
- 
-https://user-images.githubusercontent.com/25398675/145734278-02dfc28b-47d3-47bc-86f5-0f86acb147d0.mov
+
+https://user-images.githubusercontent.com/25398675/149243689-e843434b-e2ba-4787-adf1-7864d02e1c97.mov
 
 ### 3. The ADP state
 
-https://user-images.githubusercontent.com/25398675/145734412-b5779603-70c9-4411-824d-ee4d52e42478.mov
+https://user-images.githubusercontent.com/25398675/149243712-20a53ccf-aac9-4f33-95a8-a09eee4d7166.mov
 
 Last, we performed RMSD and RMSF analysis for the trajectory:
 #### 1. RMSD: 
