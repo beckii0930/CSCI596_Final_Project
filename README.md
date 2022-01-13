@@ -37,20 +37,19 @@ Below is a sample CG scheme for a nucleotide Cytosine.
 <p align="center">
   <img src="./Ccgscheme.png" width="300">
 </p>
+<p align="center">
+  <b>Figure 3. DNA CG Scheme</b>
+</p>
+
 
 The potential energy calculations for DNA includes bonded potentials and non-bonded potentials:
 <p align="center">
   <img src="./3spn.2c.png" width="500">
 </p>
-
 <p align="center">
   <b>Equation 1. 3SPN.2C Potential for DNA</b>
 </p>
 where the detailed calculations are described in [Hinckley et al.,2013](https://doi.org/10.1063/1.4822042) .
-
-<p align="center">
-  <b>Figure 3. DNA CG Scheme</b>
-</p>
 
 A "**1 Site per Amino Acid**" strategy is used to coarse grain proteins. 
 Below is a sample CG scheme for a protein with amino acid sequence GLN-GLU-ASP-ASP-ALA.
