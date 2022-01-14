@@ -128,9 +128,7 @@ The last frame of the .dcd trajectory obtained from simulation is used as the in
 ## III. Results
 
 First, we obtain the entire Initial CG structure for this system using the CG scheme described in the Methods Section.
-<p align="center">
-  <img src="./CGsystem.png" width="1000">
-</p>
+![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
 
 <p align="center">
   <b>Figure 7. INO80 All Atom to CG Structure</b>
@@ -160,13 +158,13 @@ Last, we performed RMSD and RMSF analysis for the trajectory:
 #### 1. RMSD: 
 RMSD analysis aims to understand the root mean square deviation of the structure compared to the initial structue over time. Below shows the RMSD of the ATPase Lobe1, ATPase Lobe2, Histone, and DNA. 
 
-We see that DNA has the greatest movement due to its 3' end and 5' end linkers. 
+We see that Histone has the greatest movement due to its histone tails. 
 
-The Lobe 2 has greater movements compared to Lobe 1. Lobe 2 has stabilized more in ATP and ADP states compared to apo state. In ATP state, we increased the contact between Lobe 1 and Lobe 2, which can explain the lower RMSD of Lobe2. In ADP state, we lowered contact strength between Lobe 2 and DNA, which is reflected by increased RMSD of Lobe 2. 
+The Lobe 2 has greater movements compared to Lobe 1. In ATP state, we increased the contact between Lobe 1 and Lobe 2, which can explain the lower RMSD of Lobe2. In ADP state, we lowered contact strength between Lobe 2 and DNA, which is reflected by increased RMSD of Lobe 2. 
 
 Last, the histone movements are similar. 
 <p align="center">
-  <img src="./RMSD.png" width="140%">
+  <img src="./RMSD.png" width="160%">
 </p>
 
 <p align="center">
