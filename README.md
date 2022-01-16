@@ -128,7 +128,9 @@ The last frame of the .dcd trajectory obtained from simulation is used as the in
 ## III. Results
 
 First, we obtain the entire Initial CG structure for this system using the CG scheme described in the Methods Section.
-![image](https://user-images.githubusercontent.com/25398675/143984154-7b7f0b93-97b7-4076-8595-bdf312867ebc.png)
+<p align="center">
+  <img src="./CGsystem.png" width="1000">
+</p>
 
 <p align="center">
   <b>Figure 7. INO80 All Atom to CG Structure</b>
