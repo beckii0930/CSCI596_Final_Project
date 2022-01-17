@@ -13,11 +13,11 @@
   <b>Figure 1. INO80 Chromatin Remodeler Cryo-EM Structure</b>
 </p>
 
-Chromatin Remodelers are protein complexes that can interact directly to consensed chromatin and displace nucleosomes to allow downstream Transcription Factors to access the underlying genomic DNA information. It does so using ATP hydrolysis. The recent influx of remodeler cystal structures shed lights on potential modes of nucleosome sliding but the detailed mechanism is unclear. Here, I investigated the mechanism of chromatin remodeler, INO80 using Coarse Grained Molecular Dynamics Simulations.
+Chromatin Remodelers are protein complexes that can interact directly to consensed chromatin and displace nucleosomes to allow downstream Transcription Factors to access the underlying genomic DNA information. It does so using ATP hydrolysis. The recent influx of remodeler cystal structures shed lights on potential modes of nucleosome sliding but the detailed mechanism is unclear. Here, I investigated the DNA sliding mechanism of chromatin remodeler, INO80 using Coarse Grained Molecular Dynamics Simulations.
 
 ```
 The Biological Question: 
-What is the moleclar mechanism INO80 uses to slide the nucleosome using ATP hydrolysis?
+What is the moleclar mechanism INO80 uses to slide the nucleosome DNA using ATP hydrolysis?
 ```
 ## II. Methods
 ### 1. Coarse Grain Molecular Dynamics
@@ -73,7 +73,7 @@ The potential calculations are described below and details explained in the S1 T
 
 
 ### 2. Chromatin Remodeler Slides Nucleosome Using ATP Hydrolysis
-Chromatin Remodelers are SNF2 family ATPases. They contain 2 lobes in its ATPase domain. 
+Chromatin Remodelers are SNF2 family ATPases. Each Chromatin Remodeler contains 2 lobes in its ATPase domain. 
 <p align="center">
   <img src="./snf2domain.png" width="500">
 </p>
@@ -166,7 +166,7 @@ The Lobe 2 has greater movements compared to Lobe 1. In ATP state, we increased 
 
 Last, the histone movements are similar. 
 <p align="center">
-  <img src="./RMSD.png" width="160%">
+  <img src="./RMSD.png"  width="1500">
 </p>
 
 <p align="center">
