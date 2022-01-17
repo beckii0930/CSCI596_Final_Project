@@ -162,7 +162,7 @@ RMSD analysis aims to understand the root mean square deviation of the structure
 
 We see that Histone has the greatest movement due to its histone tails. 
 
-The Lobe 2 has greater movements compared to Lobe 1. In ATP state, we increased the contact between Lobe 1 and Lobe 2, which can explain the lower RMSD of Lobe2. In ADP state, we lowered contact strength between Lobe 2 and DNA, which is reflected by increased RMSD of Lobe 2. 
+The Lobe 2 has greater movements compared to Lobe 1. But the RMSD is in general stable and indicates that we need to simulate for a longer time. 
 
 Last, the histone movements are similar. 
 <p align="center">
@@ -188,7 +188,7 @@ For DNA, the nucleosome DNA dyad position is indicated by a verticle line and we
   <b>Figure 9. RMSF of 2 Catalytic Lobes and DNA</b>
 </p>
 
-Next, histone RMSF is investigated. Solid lines indicate one copy of each histone octamer, whereas the dotted lines indicate the second copy of that. In general, the movements of the 2 copies fluctuates in a similar manner.
+Next, histone RMSF is investigated. Solid lines indicate one copy of each histone octamer, whereas the dotted lines indicate the second copy of that. In general, the movements of the 2 copies fluctuates in a similar manner except for H2B.
 
 <p align="center">
   <img src="./RMSF_Histone_Per_State.png" width="1500">
@@ -246,4 +246,4 @@ cafemol ./ino80_6fml/pt1.inp
 ```
 ## IV. Conclusion
 
-In this repo, I completed simulations for the INO80 chromatin remodeler and demonstrated the general workflow to simulate ATP Hydrolysis Cycle of this system. The RMSD and RMSF plots are used to examine the simulated trajactory to see the behaviour of the system. In the next phase, we need to perform more analysis, such as free energy profile in order to see whether we have achieved expected INO80 translocation activity.
+In this repo, I ran simulations for the INO80 chromatin remodeler and demonstrated the general workflow to simulate ATP Hydrolysis Cycle of this system. The RMSD and RMSF plots are used to examine the simulated trajactory to see the behaviour of the system. In the next phase, we need to perform more analysis, such as analysis for DNA translocation to verify the translocase behaviour.
